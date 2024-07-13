@@ -36,7 +36,7 @@ public class TestTemplate {
      * Displays the start of the test series, with its name and its number of tests.
      */
     public void displayStartTests() {
-        String buffer = this.SECTIONSEPARATOR + "  STARTING " + this.TESTSNAME + "  " + SECTIONSEPARATOR;
+        String buffer = "\n" + this.SECTIONSEPARATOR + "  STARTING " + this.TESTSNAME + "  " + SECTIONSEPARATOR;
         System.out.println(buffer);
         System.out.println("NUMBER OF TESTS: " + this.NBTESTS + "\n");
     }
@@ -54,7 +54,7 @@ public class TestTemplate {
             buffer = this.PASSED + " tests PASSED, " + this.FAILED + " tests FAILED out of " + this.NBTESTS + " tests!";
             System.out.println(buffer);
         }
-        buffer = this.SECTIONSEPARATOR + "  ENDING " + this.TESTSNAME + "  " + SECTIONSEPARATOR;
+        buffer = this.SECTIONSEPARATOR + "  ENDING " + this.TESTSNAME + "  " + SECTIONSEPARATOR + "\n";
         System.out.println(buffer);
     }
 
